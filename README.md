@@ -1,43 +1,37 @@
-README
+# 🌿 Cannabis Effects on Streamflow
 
-Cannabis Effects on Streamflow
+This repository contains code and data associated with the analysis of streamflow depletion due to cannabis cultivation, as detailed in the manuscript:
 
-This repository contains code and data associated with the analysis of streamflow depletion due to cannabis cultivation, as detailed in the manuscript Assessing streamflow depletion from agricultural groundwater use in headwater catchments using storage-discharge functions.
+📄 **Assessing Streamflow Depletion from Agricultural Groundwater Use in Headwater Catchments Using Storage-Discharge Functions**  
+Authors: Philip Georgakakos, David Dralle, Chris Dillis, Jesse Hahm, Dana Lapides, Ted Grantham  
 
-DOI for Data
+## 📥 Data Access
 
-The data associated with this repository is available on Zenodo: 10.5281/zenodo.14902190
+The dataset associated with this repository is available on Zenodo:  
+🔗 **[DOI: 10.5281/zenodo.14902190](https://doi.org/10.5281/zenodo.14902190)**
 
-Repository Contents
+## 📂 Repository Contents
 
-Data Files
+### 📊 Data Files
+- **`20211201_dry_discharge_daily.csv`** – Used in `Cannabit_phil_R.ipynb` for dry discharge data.
+- **`20240405_Full_Catchment_Statistics.csv`** – Contains statistics on cannabis area and percent cover for catchments, used in `Cannabit_phil_R.ipynb`.
+- **`20240621_Cannabis Farm Annual and Monthly Water Prediction Totals_Phil Task.csv`** – Estimates of monthly water use for permitted and unpermitted farms in Mendocino and Humboldt counties.
+- **`20240802_modeled_use_flow_landscape_coverage.csv`** – Data for modeled farm use, used in `cannabit_gq_phil.ipynb`.
+- **`level4e.csv`** – Data file used in hydrograph modeling.
+- **`sims_data.csv`** – Output file from `cannabit_gq_phil.ipynb` containing synthetic hydrographs and modeled scenarios for visualization in `Cannabit_phil_R.ipynb`.
 
-20211201_dry_discharge_daily.csvUsed in script Cannabit_phil_R.ipynb.
+### 🖥️ Code Files
+- **`Cannabit_phil_R.ipynb`** – Code for analysis, data summaries, and figure generation.
+- **`cannabit_gq_phil.ipynb`** – Uses storage-discharge sensitivity functions to generate hydrographs for streams under different scenarios.
 
-20240405_Full_Catchment_Statistics.csvStatistics associated with the catchments on the landscape for cannabis area and percent cover, used in script Cannabit_phil_R.ipynb.
+### 📖 Documentation
+- **`README.md`** – This document, describing the repository contents and usage.
 
-20240621_Cannabis Farm Annual and Monthly Water Prediction Totals_Phil Task.csvEstimates of monthly water use in permitted and unpermitted farms in Mendocino and Humboldt counties, used in script Cannabit_phil_R.ipynb.
+## ⚙️ Usage
 
-20240802_modeled_use_flow_landscape_coverage.csvData for modeled farm use, used in cannabit_gq_phil.ipynb.
+This repository provides data and analysis scripts to evaluate the hydrological impacts of cannabis agriculture. The scripts require **R** and relevant libraries to run properly.
 
-level4e.csvData file used in hydrograph modeling.
-
-sims_data.csvOutput file of cannabit_gq_phil.ipynb that contains all synthetic hydrographs and modeled scenarios, used for plotting and figures in Cannabit_phil_R.ipynb.
-
-Code Files
-
-Cannabit_phil_R.ipynbCode for analysis, summaries, and figure generation.
-
-cannabit_gq_phil.ipynbCode that uses storage-discharge sensitivity functions to generate hydrographs for both streams for all scenarios and makes figures.
-
-Documentation
-
-README.mdThis document, describing the repository contents and usage.
-
-Usage
-
-This repository provides data and analysis scripts to evaluate the hydrological impacts of cannabis agriculture. The scripts require R and relevant libraries to run properly. If using Google Colab, ensure that necessary dependencies are installed before execution.
-
-Citation
-
-If you use this data or code, please cite the associated Zenodo DOI and the published manuscript.
+### Running the Analysis in R
+1. Install the required packages in R:
+   ```r
+   install.packages(c("tidyverse", "ggplot2", "dplyr", "lubridate"))
