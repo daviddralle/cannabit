@@ -38,7 +38,7 @@ Click the links below to open the analysis notebooks in Google Colab. Once opene
 
 Groundwater extraction can deplete streamflow in headwater catchments, impacting ecosystems and water availability. This repository applies **storage-discharge functions** to estimate streamflow depletion due to cannabis agriculture in California's North Coast. The study explores:
 - Effects of cannabis cultivation area, irrigation water source, efficiency, and hydrologic conditions on streamflow.
-- Streamflow depletion scenarios using **hydrologic modeling**.
+- Streamflow depletion scenarios using the storage-discharge function to predict hydrograph recessions under different pumping scenarios.
 - Comparisons of groundwater vs. surface water withdrawals and their hydrological impacts.
 
 ## 📜 Citation
